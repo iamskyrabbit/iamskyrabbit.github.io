@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta 
+<meta name="viewport" content="width=device-width">
+<title>c2</title>
+<style>
+    * {
+        text-align: center;
+        font-size: 16px;
+    }
+    body {
+        background-color: silver;
+    }
+    .calendar {
+        background-color: white;
+        margin: 0 auto;
+    }
+    .date, .date-sat, .date-sun {
+        width: 100px;
+        height: 100px;
+        vertical-align: top;
+        text-align: left;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .sat {
+        color: blue;
+    }
+    .sun {
+        color: red;
+    }
+    .days > td {
+        vertical-align: bottom;
+        border-right-style: none;
+        height: 20px;
+        text-align: left;
+    }
+    .block a {
+        display: inline-block;
+        width: 250px;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        border: 1px solid black;
+        font-size: 24px;
+    }
+    .block {
+        display: inline-block;
+    }
+    .block a.active {
+        color: white;
+        background-color: red;
+    }
+    .block a:hover:not(.active) {
+        color: white;
+        background-color: black;
+    }
+</style>
+</head>
+<body>
+<div>
+    <div class="block"><a href="./chat.html">chat</a></div>
+    <div class="block"><a class="active">calendar</a></div>
+    <div class="block"><a href="./todo.html">todo</a></div>
+    <div class="block"><a href="./blog.html">blog</a></div>
+    <div class="block"><a href="./setting.html">setting</a></div>
+</div>
+<table class="calendar">
+    <tr class="days">
+        <td class="date">Mon</td>
+        <td class="date">Tue</td>
+        <td class="date">Wed</td>
+        <td class="date">Thu</td>
+        <td class="date">Fri</td>
+        <td class="date sat">Sat</td>
+        <td class="date sun">Sun</td>
+    </tr>
+    <tr>
+        <td class="date"></td>
+        <td class="date"></td>
+        <td class="date"></td>
+        <td class="date"></td>
+        <td class="date"></td>
+        <td class="date sat"></td>
+        <td class="date sun">1</td>
+    </tr>
+    <tr>
+        <td class="date">2</td>
+        <td class="date">3</td>
+        <td class="date">4</td>
+        <td class="date">5</td>
+        <td class="date">6</td>
+        <td class="date sat">7</td>
+        <td class="date sun">8</td>
+    </tr>
+    <tr>
+        <td class="date">9</td>
+        <td class="date">10</td>
+        <td class="date">11</td>
+        <td class="date">12</td>
+        <td class="date">13</td>
+        <td class="date sat">14</td>
+        <td class="date sun">15</td>
+    </tr>
+    <tr>
+        <td class="date">16</td>
+        <td class="date">17</td>
+        <td class="date">18</td>
+        <td class="date">19</td>
+        <td class="date">20</td>
+        <td class="date sat">21</td>
+        <td class="date sun">22</td>
+    </tr>
+    <tr>
+        <td class="date">23</td>
+        <td class="date">24</td>
+        <td class="date">25</td>
+        <td class="date">26</td>
+        <td class="date">27</td>
+        <td class="date sat">28</td>
+        <td class="date sun">29</td>
+    </tr>
+    <tr>
+        <td class="date">30</td>
+        <td class="date">31</td>
+        <td class="date"></td>
+        <td class="date"></td>
+        <td class="date"></td>
+        <td class="date sat"></td>
+        <td class="date sun"></td>
+    </tr>
+</table>
+</body>
+</html>

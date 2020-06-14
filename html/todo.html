@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta 
+<meta name="viewport" content="width=device-width">
+<title>c2</title>
+<style>
+    * {
+        text-align: center;
+        font-size: 16px;
+    }
+    body {
+        background-color: silver;
+    }
+    .block a {
+        display: inline-block;
+        width: 250px;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        border: 1px solid black;
+        font-size: 24px;
+    }
+    .block {
+        display: inline-block;
+    }
+    .block a.active {
+        color: white;
+        background-color: red;
+    }
+    .block a:hover:not(.active) {
+        color: white;
+        background-color: black;
+    }
+</style>
+</head>
+<body>
+<div>
+    <div class="block"><a href="./chat.html">chat</a></div>
+    <div class="block"><a href="./calendar.html">calendar</a></div>
+    <div class="block"><a class="active">todo</a></div>
+    <div class="block"><a href="./blog.html">blog</a></div>
+    <div class="block"><a href="./setting.html">setting</a></div>
+</div>
+</body>
+</html>
