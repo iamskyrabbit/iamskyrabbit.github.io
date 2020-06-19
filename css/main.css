@@ -2,14 +2,34 @@
   font-family: 'しょかきさらり行体';
   font-size: 36px;
 }
-.main h1,h2,h3,h4,h5,h6 {
+.main h1 {
+  font-size: 200%;
+  margin: 0;
+}
+.main h2 {
   font-size: 150%;
+  margin: 0;
+}
+.main h3 {
+  font-size: 120%;
+  margin: 0;
+}
+.main h4 {
+  font-size: 100%;
+  margin: 0;
+}
+.main h5 {
+  font-size: 80%;
+  margin: 0;
+}
+.main h6 {
+  font-size: 70%;
   margin: 0;
 }
 .main a {
   color: blue;
   text-decoration: none;
 }
-*:not(h1,h2,h3,h4,h5,h6) {
+.main *:not(h1,h2,h3,h4,h5,h6) {
   font-size: 36px;
 }
