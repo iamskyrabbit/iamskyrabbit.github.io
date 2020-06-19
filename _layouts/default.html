@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="https://iamskyrabbit.github.io/css/box.css" type="text/css"/>
-    <link rel="stylesheet" href="https://iamskyrabbit.github.io/css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/box.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/calendar.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/list.css" type="text/css"/>
   </head>
   <body>
+    {% include navigation.html %}
     {{ content }}
   </body>
 </html>

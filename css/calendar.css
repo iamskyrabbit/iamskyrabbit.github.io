@@ -1,0 +1,24 @@
+.calendar {
+  background-color: white;
+  margin: 0 auto;
+}
+.date, .date-sat, .date-sun {
+  width: 100px;
+  height: 100px;
+  vertical-align: top;
+  text-align: left;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.sat {
+  color: blue;
+}
+.sun {
+  color: red;
+}
+.days > td {
+  vertical-align: bottom;
+  border-right-style: none;
+  height: 20px;
+  text-align: left;
+}
