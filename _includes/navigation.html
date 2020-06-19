@@ -1,8 +1,38 @@
-<nav>
-  <a href="/">home</a>
-  <a href="/html/chat.html">chat</a>
-  <a href="/html/calendar.html">calendar</a>
-  <a href="/html/todo.html">todo</a>
-  <a href="/html/blog.html">blog</a>
-  <a href="/html/setting.html">setting</a>
-</nav>
+<div>
+  <div class="box"><a
+    {% if page.url == "/" %}
+      class="active"
+    {% endif %}
+      href="/"
+  >home</a></div>
+  <div class="box"><a
+    {% if page.url == "/chat.html" %}
+      class="active"
+    {% endif %}
+      href="/chat.html"
+  >chat</a></div>
+  <div class="box"><a
+    {% if page.url == "/calendar.html" %}
+      class="active"
+    {% endif %}
+      href="/calendar.html"
+  >calendar</a></div>
+  <div class="box"><a
+    {% if page.url == "/todo.html" %}
+      class="active"
+    {% endif %}
+      href="/todo.html"
+  >todo</a></div>
+  <div class="box"><a
+    {% if page.url == "/blog.html" %}
+      href="/blog.html"
+    {% endif %}
+      class="active"
+  >blog</a></div>
+  <div class="box"><a
+    {% if page.url == "/setting.html" %}
+      class="active"
+    {% endif %}
+      href="/setting.html"
+    >setting</a></div>
+</div>
