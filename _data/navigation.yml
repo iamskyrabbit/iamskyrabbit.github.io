@@ -1,0 +1,10 @@
+- name: home
+  link: /
+- name: chat
+  link: /html/chat.html
+- name: calendar
+  link: /html/calendar.html
+- name: todo
+  link: /html/todo.html
+- name: blog
+  link: /html/blog.html

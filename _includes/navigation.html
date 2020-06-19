@@ -1,37 +1,11 @@
 <div>
-  <div class="box"><a
-    {% if page.url == "/" %}
-      class="active"
-    {% else %}
-      href="/"
-    {% endif %}
-  >home</a></div>
-  <div class="box"><a
-    {% if page.url == "/html/chat.html" %}
-      class="active"
-    {% else %}
-      href="/html/chat.html"
-    {% endif %}
-  >chat</a></div>
-  <div class="box"><a
-    {% if page.url == "/html/calendar.html" %}
-      class="active"
-    {% else %}
-      href="/html/calendar.html"
-    {% endif %}
-  >calendar</a></div>
-  <div class="box"><a
-    {% if page.url == "/html/todo.html" %}
-      class="active"
-    {% else %}
-      href="/html/todo.html"
-    {% endif %}
-  >todo</a></div>
-  <div class="box"><a
-    {% if page.url == "/html/blog.html" %}
-      class="active"
-    {% else %}
-      href="/html/blog.html"
-    {% endif %}
-  >blog</a></div>
+  {% for item in site.data.navigation %}
+    <div class="box"><a
+      {% if page.url == item.link %}
+        class="active"
+      {% else %}
+        href="{{item.link}}"
+      {% endif %}
+    >{{ item.name }}</a></div>
+  {% endfor %}
 </div>
