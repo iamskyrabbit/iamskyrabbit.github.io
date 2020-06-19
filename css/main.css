@@ -1,0 +1,15 @@
+.main {
+  font-family: 'しょかきさらり行体';
+  font-size: 36px;
+}
+.main h1,h2,h3,h4,h5,h6 {
+  font-size: 150%;
+  margin: 0;
+}
+.main a {
+  color: blue;
+  text-decoration: none;
+}
+.main a,li {
+  font-size: 36px;
+}
