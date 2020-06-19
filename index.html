@@ -3,81 +3,69 @@
 <head>
 <meta name="viewport" content="width=device-width">
 <title>c2</title>
+<link rel="stylesheet" href="./css/box.css" type="text/css"/>
 <style>
-    * {
-        text-align: center;
-        font-size: 16px;
-    }
-    body {
-        background-color: silver;
-    }
-    @font-face {
-	    font-family: 'しょかきさらり行体';
-	    src: url('./../font/しょかきさらり行体.ttf') format('truetype');
-    }
-    .block a {
-        display: inline-block;
-        width: 250px;
-        color: black;
-        background-color: white;
-        text-decoration: none;
-        border: 1px solid black;
-        font-size: 24px;
-    }
-    .block {
-        display: inline-block;
-    }
-    .block a.active {
-        color: white;
-        background-color: red;
-    }
-    .block a:hover:not(.active) {
-        color: white;
-        background-color: black;
-    }
-    .main {
-        font-family: 'しょかきさらり行体';
-        font-size: 36px;
-    }
-    .main h1,h2,h3,h4,h5,h6 {
-        font-size: 150%;
-    }
-    .main a {
-        text-decoration: none;
-        font-size: 36px;
-    }
+  .main {
+    font-family: 'しょかきさらり行体';
+    font-size: 36px;
+  }
+  .main h1,h2,h3,h4,h5,h6 {
+    font-size: 150%;
+  }
+  .main a {
+    color: blue;
+    text-decoration: none;
+    font-size: 36px;
+  }
 </style>
 </head>
 <body>
 <div>
-    <div class="block"><a href="./html/chat.html">chat</a></div>
-    <div class="block"><a href="./thml/calendar.html">calendar</a></div>
-    <div class="block"><a href="./html/todo.html">todo</a></div>
-    <div class="block"><a href="./html/blog.html">blog</a></div>
-    <div class="block"><a href="./html/setting.html">setting</a></div>
+  <div class="box"><a href="./html/chat.html">chat</a></div>
+  <div class="box"><a href="./thml/calendar.html">calendar</a></div>
+  <div class="box"><a href="./html/todo.html">todo</a></div>
+  <div class="box"><a href="./html/blog.html">blog</a></div>
+  <div class="box"><a href="./html/setting.html">setting</a></div>
 </div>
-<div class="main" style="display:inline-block;">
-    <h1>そらうさぎの部屋</h1>
-    ​主にそらうさぎ(@skyrabbit)の研究開発のメモや<br>
-    あぷりの配布などをしているwebサイトです。<br>
-    開発内容はコンピュータの言語処理系などがメインです。<br>
-    <br>
-    <div>
-        <div class="block"><a href="./blog-distribution.html">配布の部屋</a></div>
-        <div class="block"><a href="./blog-article.html">記事の部屋</a></div>
-        <div class="block"><a href="./blog-picture.html">画像の部屋</a></div>
-        <div class="block"><a href="./blog-etc.html">などなど</a></div>
-    </div>
-    </div>
-    <div style="display: inline-block;">
-        <img src="./../picture/うさぎさん.jpg" width="250">
-    </div>
-    <div class="main" style="background-color: aqua;margin-top: 36px;">
-        うさぎさんアイコン ー Drowed by <a href="https://twitter.com/iwa_choco_168">岩ちょこ</a>様<br>
-        配布の部屋: 準備中なのです。<br>
-        記事の部屋: 開発途中の記事やら何やらを載せます。<br>
-        画像の部屋: 準備中なのです。<br>
-        準備中なのです。<br>
-    </div>
+<div class="main" style="display: inline-block;">
+  <h1>そらうさぎの部屋</h1>
+  ​主にそらうさぎ(@iamskyrabbit)の研究開発のメモや<br>
+  アプリ配布などをしているwebサイトです。<br>
+  開発はコンピュータの言語処理系などがメインです。<br>
+  <br>
+  <div>
+    <div class="box"><a href="#distribution">配布の部屋</a></div>
+    <div class="box"><a href="#article">記事の部屋</a></div>
+    <div class="box"><a href="#image">画像の部屋</a></div>
+    <div class="box"><a href="#etc">などなど</a></div>
+  </div>
+</div>
+<div style="display: inline-block;">
+  <img src="./image/うさぎさん.jpg" width="250">
+</div>
+<div class="main" style="margin-top: 36px;">
+  アイコン: うさぎさん　　 ー <a href="https://twitter.com/iwa_choco_168">岩ちょこ</a>様<br>
+  フォント: しょかきさらり ー <a href="http://shokaki.hatenablog.jp/entry/2018/06/03/095429">しょかき</a>様<br>
+  配布の部屋: 準備中なのです。<br>
+  記事の部屋: 開発途中の記事やら何やらを載せます。<br>
+  画像の部屋: 準備中なのです。<br>
+  準備中なのです。<br>
+</div>
+<div id="distribution" class="main" style="background-color: white;">
+  <h2>配布の部屋</h2>
+  準備中なのです。<br>
+</div>
+<div id="article" class="main" style="background-color: aqua;">
+  <h2>記事の部屋</h2>
+  準備中なのです。<br>
+</div>
+<div id="image" class="main" style="background-color: white;">
+  <h2>画像の部屋</h2>
+  準備中なのです。<br>
+</div>
+<div id="etc" class="main" style="background-color: aqua;">
+  <h2>などなど</h2>
+  準備中なのです。<br>
+</div>
 </body>
 </html>
