@@ -2,37 +2,36 @@
   <div class="box"><a
     {% if page.url == "/" %}
       class="active"
-    {% endif %}
+    {% else %}
       href="/"
+    {% endif %}
   >home</a></div>
   <div class="box"><a
     {% if page.url == "/chat.html" %}
       class="active"
+    {% else %}
+      href="/html/chat.html"
     {% endif %}
-      href="/chat.html"
   >chat</a></div>
   <div class="box"><a
     {% if page.url == "/calendar.html" %}
       class="active"
+    {% else %}
+      href="/html/calendar.html"
     {% endif %}
-      href="/calendar.html"
   >calendar</a></div>
   <div class="box"><a
     {% if page.url == "/todo.html" %}
       class="active"
+    {% else %}
+      href="/html/todo.html"
     {% endif %}
-      href="/todo.html"
   >todo</a></div>
   <div class="box"><a
     {% if page.url == "/blog.html" %}
-      href="/blog.html"
-    {% endif %}
       class="active"
+    {% else %}
+      href="/html/blog.html"
+    {% endif %}
   >blog</a></div>
-  <div class="box"><a
-    {% if page.url == "/setting.html" %}
-      class="active"
-    {% endif %}
-      href="/setting.html"
-    >setting</a></div>
 </div>
