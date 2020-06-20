@@ -1,15 +1,4 @@
-* {
-  text-align: center;
-  font-size: 16px;
-}
-body {
-  background-color: silver;
-}
-@font-face {
-  font-family: 'しょかきさらり行体';
-  src: url('./../font/しょかきさらり行体.ttf') format('truetype');
-}
-.box a {
+.inlinebox a {
   display: inline-block;
   width: 250px;
   color: black;
@@ -18,14 +7,24 @@ body {
   border: 1px solid black;
   font-size: 24px;
 }
-.box {
+.inlinebox {
   display: inline-block;
 }
-.box a.active {
+.inlinebox a.active {
   color: white;
   background-color: red;
 }
-.box a:hover:not(.active) {
+.inlinebox a:hover:not(.active) {
   color: white;
   background-color: black;
+}
+.box {
+  font-family: 'しょかきさらり行体';
+}
+.box h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.box a {
+  color: blue;
+  text-decoration: none;
 }
