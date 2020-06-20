@@ -14,24 +14,24 @@ user: @iamskyrabbit
   </head>
   <body>
     {% include navigation.html %}
-    <ul style="display: inline;">
+    <ul style="display: inline-block;">
       <li><a class="active">Home</a></li>
       <li><a href="#John">John</a></li>
       <li><a href="#Ken">Ken</a></li>
       <li><a href="#Mary">Mary</a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
+      <li><a href="#Alex">Alex</a></li>
+      <li><a href="#Cate">Cate</a></li>
+      <li><a href="#Chris">Chris</a></li>
+      <li><a href="#Beth">Beth</a></li>
+      <li><a href="#Matt">Matt</a></li>
+      <li><a href="#Jen">Jen</a></li>
+      <li><a href="#Tom">Tom</a></li>
       <li><a href="#"></a></li>
       <li><a href="#"></a></li>
       <li><a href="#"></a></li>
       <li><a href="#"></a></li>
     </ul>
-    <div id="chat_container" style="display: inline;">
+    <div id="chat_container" style="display: inline-block;">
         <!-- チャットの外側部分① -->
         <div id="bms_messages_container">
             <!-- ヘッダー部分② -->
@@ -41,16 +41,14 @@ user: @iamskyrabbit
                     <!--ステータスアイコン-->
                     <div id="bms_status_icon">●</div>
                     <!--ユーザー名-->
-                    <div id="bms_chat_user_name">ユーザー</div>
+                    <div id="bms_chat_user_name">{{ page.url | split: "#" | last }}</div>
                 </div>
             </div>
     
             <!-- タイムライン部分③ -->
             <div id="bms_messages">
-    
                 <!--メッセージ-->
                 {% include left_message.html content="ほうほうこりゃー便利じゃないか" %}
-    
                 <!--メッセージ-->
                 {% include right_message.html content="うん、まあまあいけとるな" %}
             </div>
