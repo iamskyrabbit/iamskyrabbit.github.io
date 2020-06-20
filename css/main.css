@@ -1,11 +1,39 @@
-* {
-  text-align: center;
-  font-size: 36px;
-}
-body {
-  background-color: silver;
-}
 @font-face {
   font-family: 'しょかきさらり行体';
-  src: url('./../font/しょかきさらり行体.ttf') format('truetype');
+  src: url('/font/しょかきさらり行体.ttf') format('truetype');
+}
+* {
+  text-align: center;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 3.0em;
+  background-color: gray;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+h1 {
+  font-size: 6.0rem;
+}
+h2 {
+  font-size: 4.5rem;
+}
+h3 {
+  font-size: 3.6rem;
+}
+h4 {
+  font-size: 3.0rem;
+}
+h5 {
+  font-size: 2.4rem;
+}
+h6 {
+  font-size: 2.1rem;
+}
+a {
+  text-decoration: none;
 }
